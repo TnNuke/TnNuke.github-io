@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.ProjectLink{
+    color: black;
+    text-decoration: none;
+}
+
+.NavStyle {
+    background-color:#0D1130;
+    font-size: 17px;
+    font: Montserrat, "Montserrat SemiBold";
+}
+
+.NavText {
+    color: white ;
+}
+
+.PageTitle {
+    font: Montserrat, "Montserrat Medium";
+}
+
+.SubTitle {
+    font: Montserrat, "Montserrat Medium";
+}
+
+.GenText {
+    font-size: 15px;
+    font: Montserrat, "Montserrat Regular";
+}
+
+.Jumbo1 {
+    background-color:#1C2269;
+    color: white;
+}
+
+.Jumbo2 {
+    background-color:#283785;
+    color: white;
+}
+
+.FooterStyle {
+    background-color: #283785;
+    color: white;
+    font-size: 12px;
+    font: Montserrat, "Montserrat Regular";
+}
+

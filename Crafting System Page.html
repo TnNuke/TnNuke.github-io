@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/website-style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg NavStyle">
+  <a class="navbar-brand NavText" href="Index.html">
+  Home
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link NavText" href="ProjectsPage.html">
+        Projects
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link NavText" href="ResumePage.html">
+        Resume
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section>
+  <div class="text-center mt-2">
+    <div class="container">
+      <div class="row">
+        <br/>
+        <br/>
+        <br/>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1 class="PageTitle">Prototype Alchemy Crafting System</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <br />
+    <div class="row">
+      <div class="col-12 text-left">
+        <p class="GenText">
+          This is a New take on a crafting system that I created for a class and am still actively working on and improving. The purpose of this project was to take a system in games and inovate it. I chose to create a crafting system, as most of the crafting systems in games boil down to the same mechanic. Have the required items in your inventory, and press a button. The only different crafting system I could find in my research was Minecraft, which requires you to build a pattern in a 3X3 grid using the materials in order to craft. I was inspired by how Minecraft's crafting system works and wanted to push the system further, and that's when I had the idea to combine this idea with a classic game, Tetris, along with a few of my own ideas. In order to ground my idea to a specific design I decided to theme this around the idea of Alchemy, although this system could be applied to any design idea with a few tweaks. The breakdown of how this system works is below.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br/>
+<br/>
+<section>
+  <div class="jumbotron jumbotron-fluid Jumbo1">
+    <div class="container">
+      <br/>
+      <div class="row">
+        <div class="col-md-6 col-12 text-left">
+          <div class="row">
+            <h4 class="SubTitle">Items</h4>
+          </div>
+          <div class="row">
+            <p class="GenText">
+              Items are one of the two most important components of this crafting system. Each item is comprised of cells that are placed into the pattern of the item. The pattern of the item is determined by a data table that tells the actor how many cells are needed for the object and how to place the cells. When the item is picked up by the player, the cells will constantly check below them to see if there is an empty grid space below them. If all the cells of the item have an empty grid space below them when the player tries to place the item, the item will align itself with the grid spaces and occupy them, otherwise the item will return to it's last position. The player also has the ability to rotate the items to fit them into the grid to get the proper affinity requirements, which is the next topic.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+          <img class="img-fluid" src="images/Rotating and Crafting.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="jumbotron jumbotron-fluid Jumbo2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12 text-left mt-md-0 mt-2">
+          <img class="img-fluid" src="images/Spawning Items and Affinity.gif" alt="">
+        </div>
+        <div class="col-md-6 col-12 text-left">
+          <div class="row">
+            <h4 class="SubTitle">Affinity</h4>
+          </div>
+          <div class="row">
+            <p class="GenText">
+              Affinity is the other important component of how the system works. There are four elemental affinities: Aqua, Terra, Ignis, and Aer. The grid is divided into sections that align with each affinity, and each item aligns with an affinity. As the grid spaces for an affinity are occupied, the total affinity for that element will increase. Crafting items will require certain levels of affinity for one or multiple elements. Currently the affinity is only calculated by the percentage of each grid section filled, however this is temporary and I plan on changing how this works. My intention for this is for filling spaces to increase each affinity but not based on percentage, and grid spaces that are filled by item cells of the same affinity will double their contribution to the total affinity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section>
+  <div class="jumbotron jumbotron-fluid Jumbo1">
+    <div class="container">
+      <br/>
+      <div class="row">
+        <div class="col-md-6 col-12 text-left">
+          <div class="row">
+            <h4 class="SubTitle">The Grid</h4>
+          </div>
+          <div class="row">
+            <p class="GenText">
+              The last part of this project that I will break down is the grid itself. As mentioned before it is divided evenly into four sections of the affinity mechanic. Each grid cell keeps track of if it is currently being occupied, and an overall grid manager actor handles placing the grid cells in runtime, and what percentage of the cells in the grid are filled. As the player reaches milestones of discovering new recipies, the grid will expand in size, allowing the player to use the larger items in crafting.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+          <img class="img-fluid" src="images/Grid Size.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<footer class="text-center FooterStyle">
+  <div class="container">
+    <div class="row">
+      <h4 class="SubTitle">Socials</h4>
+    </div>
+    <a>
+    <div class="row">
+      <div class="col-sm-1 text-left">
+        <p class="GenText">
+            <a href="https://twitter.com/KarwoskiAdam">Twitter</a>
+        </p>
+      </div>
+    </div>
+    </a>
+    <a>
+    <div class="row">
+      <div class="col-sm-1 text-left">
+        <p class="GenText">
+          <a href="https://www.instagram.com/akarwo20/">Instagram</a> 
+        </p>
+      </div>
+    </div>
+    </a>
+    <a>
+    <div class="row">
+      <div class="col-sm-1 text-left">
+        <p class="GenText">
+          <a href="https://www.youtube.com/channel/UCJtlqpVA2gDcoItkSo0wdNA">Youtube</a>
+        </p>
+      </div>
+    </div>
+    </a>
+    <a>
+    <div class="row">
+      <div class="col-sm-1 text-left">
+        <p class="GenText">
+          <a href="https://www.tiktok.com/@adamkarwoski?is_from_webapp=1&sender_device=pc">Tiktok</a>
+        </p>
+      </div>
+    </div>
+    </a>
+    <br/>
+    <br/>
+    <div class="row">
+      <div class="col-12">
+        <p class="GenText">
+          Copyright © Adam Karwoski. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
