@@ -26,15 +26,18 @@
 
 .PageTitle {
     font: Montserrat, "Montserrat Medium";
+    padding: 10px;
 }
 
 .SubTitle {
     font: Montserrat, "Montserrat Medium";
+    padding: 10px;
 }
 
 .GenText {
     font-size: 15px;
     font: Montserrat, "Montserrat Regular";
+    padding: 10px;
 }
 
 .Jumbo1 {
@@ -52,5 +55,6 @@
     color: white;
     font-size: 12px;
     font: Montserrat, "Montserrat Regular";
+    padding: 10px;
 }
 
