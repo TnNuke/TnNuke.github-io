@@ -17,6 +17,13 @@
     color: white ;
 }
 
+.NavCollapse {
+    display: inline-block;
+    background-color: white;
+    padding: 2px;
+    width:100%;
+}
+
 .PageTitle {
     font: Montserrat, "Montserrat Medium";
 }
