@@ -8,7 +8,7 @@
 }
 
 .NavStyle {
-    background-color:#0D1130;
+    background-color:#36194D;
     font-size: 17px;
     font: Montserrat, "Montserrat SemiBold";
 }
@@ -24,34 +24,46 @@
     width:100%;
 }
 
+.PageStyle{
+    background-color: #F3EBF9;
+}
+
 .PageTitle {
     font: Montserrat, "Montserrat Medium";
+    font-size: 90px;
     padding: 10px;
 }
 
 .SubTitle {
     font: Montserrat, "Montserrat Medium";
+    font-size: 45px;
+    padding: 10px;
+}
+
+.NameSubTitle {
+    font: Montserrat, "Montserrat Medium";
+    font-size: 25px;
     padding: 10px;
 }
 
 .GenText {
-    font-size: 15px;
+    font-size: 18px;
     font: Montserrat, "Montserrat Regular";
     padding: 10px;
 }
 
 .Jumbo1 {
-    background-color:#1C2269;
+    background-color:#A065CD;
     color: white;
 }
 
 .Jumbo2 {
-    background-color:#283785;
+    background-color:#6c3299;
     color: white;
 }
 
 .FooterStyle {
-    background-color: #283785;
+    background-color: #21132C;
     color: white;
     font-size: 12px;
     font: Montserrat, "Montserrat Regular";
